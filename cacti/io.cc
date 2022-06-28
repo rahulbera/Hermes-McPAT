@@ -1502,8 +1502,8 @@ bool InputParameter::error_checking()
       A = assoc;
       if (is_pow2(A) == false)
       {
-        cerr << "Associativity must be a power of 2" << endl;
-        return false;
+        cerr << "[Warning] Associativity is not a  power of 2" << endl;
+        // return false;
       }
     }
   }
