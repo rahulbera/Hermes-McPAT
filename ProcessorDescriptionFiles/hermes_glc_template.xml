@@ -267,8 +267,7 @@
 	    </component>
 		<!-- ************** L2 DATA CACHE ************** -->
 		<component id="system.L20" name="L20">
-				<!-- GLC's L2C is actually 20 way. But for CACTI's sake, we assume it to be 16 ways -->
-				<param name="L2_config" value="1048576,64,16,8,8,15,64,1"/> 
+				<param name="L2_config" value="1310720,64,20,8,8,15,64,1"/> 
 				<!-- the parameters are capacity,block_width, associativity, bank, throughput w.r.t. core clock, latency w.r.t. core clock,output_width, cache policy -->
 				<param name="buffer_sizes" value="48,48,16,48"/>
 				<!-- cache controller buffer sizes: miss_buffer_size(MSHR),fill_buffer_size,prefetch_buffer_size,wb_buffer_size-->	
@@ -287,8 +286,7 @@
 		</component>
 <!--**********************************************************************-->
 <component id="system.L30" name="L30">
-				<!-- GLC's LLC slice is actually 12 way. But for CACTI's sake, we assume it to be 16 ways -->
-				<param name="L3_config" value="4194304,64,16,16,16,55,64,1"/>
+				<param name="L3_config" value="3145728,64,12,16,16,55,64,1"/>
 				<!-- the parameters are capacity,block_width, associativity,bank, throughput w.r.t. core clock, latency w.r.t. core clock,-->
 				<param name="buffer_sizes" value="64,48,32,48"/>
 				<!-- cache controller buffer sizes: miss_buffer_size(MSHR),fill_buffer_size,prefetch_buffer_size,wb_buffer_size-->	
